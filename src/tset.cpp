@@ -61,12 +61,12 @@ TSet& TSet::operator=(const TSet &s) // присваивание
 
 int TSet::operator==(const TSet &s) const // сравнение
 {
-    return BitField != s.BitField;
+    return BitField == s.BitField;
 }
 
 int TSet::operator!=(const TSet &s) const // сравнение
 {
-	return BitField == s.BitField;
+	return BitField != s.BitField;
 }
 
 TSet TSet::operator+(const TSet &s) // объединение
